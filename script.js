@@ -7,9 +7,9 @@ const limit = 10;
 // Toggle between development and production based on user input
 document.getElementById("envToggle").addEventListener("change", (e) => {
   if (e.target.checked) {
-    API_BASE_URL = "https://api.jobpromax.com"; // Switch to production API
+    API_BASE_URL = "https://prodapi.jobpromax.com"; // Switch to production API
   } else {
-    API_BASE_URL = "https://prodapi.jobpromax.com"; // Switch back to development API
+    API_BASE_URL = "https://api.jobpromax.com"; // Switch back to development API
   }
   currentPage = 0;
   fetchNews(); // Fetch news again when environment changes
